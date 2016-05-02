@@ -1,6 +1,4 @@
 #BlueJ class context
 comment0.params=
-comment0.target=int[][]\ getBoard()
-comment1.params=a\ b
-comment1.target=void\ setSize(int,\ int)
-numComments=2
+comment0.target=int\ getSize()
+numComments=1
