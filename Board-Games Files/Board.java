@@ -7,5 +7,6 @@
  */
 public interface Board
 {
-    public int[][] getBoard()
+    int getSize();
+    
 }

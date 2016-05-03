@@ -8,26 +8,24 @@
 public class GoBoard implements Board
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int height;
+    private int width;
+    
+    private int[][] goBoard = new int[height][width];
 
     /**
      * Constructor for objects of class GoBoard
      */
-    public GoBoard()
+    public GoBoard(int height, int width)
     {
-        // initialise instance variables
-        x = 0;
+        this.height = height;
+        this.width = width;
+    }
+    
+    public int getSize()
+    {
+        return height;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }
