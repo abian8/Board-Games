@@ -7,27 +7,19 @@
  */
 public class TicTacToeBoard implements Board
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class TicTacToeBoard
-     */
-    public TicTacToeBoard()
+    private int[][] tictactoe = new int[3][3];
+    private final int rows = 3;
+    private final int col = 3;
+    public int getSize()
     {
-        // initialise instance variables
-        x = 0;
+        return tictactoe.length;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public boolean[][] availableMoves()
     {
-        // put your code here
-        return x + y;
+        boolean[][] temp = new boolean[tictactoe.length][tictactoe[0].length];
+        
+        return temp;
     }
 }
