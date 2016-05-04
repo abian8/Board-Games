@@ -7,27 +7,48 @@
  */
 public class CheBoard implements Board
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ChessBoard
-     */
-    public ChessBoard()
+    private final ChessPiece [][] chess=new String[8][8];
+    public CheBoard()
     {
-        // initialise instance variables
-        x = 0;
+        for (int i=0; i<chess.length; i++)
+        {
+            for (int j=0; j<chess[0].length; j++)
+            {
+                if (i==1)
+                    chess[i][j]=new Pawn("black");
+                if (i==6)
+                    chess[i][j]=new Pawn("white");
+                if (i==0)
+                {
+                    if (j==0 || j==7)
+                        chess[i][i]=new Rook("black");
+                    if (j==1 || j==6)
+                        chess[i][j]=new Knight("black");
+                    if (j==3 || j==5)
+                        chess[i][j]=new Bishop("black");
+                    if (i==4)
+                        chess[i][j]=new Queen("black");
+                    if (i==5)
+                        chess[i][j]=new King("black");
+                }
+                if (i==7)
+                {
+                    if (j==0 || j==7)
+                        chess[i][i]=new Rook("white");
+                    if (j==1 || j==6)
+                        chess[i][j]=new Knight("white");
+                    if (j==3 || j==5)
+                        chess[i][j]=new Bishop("white");
+                    if (i==5)
+                        chess[i][j]=new Queen("white");
+                    if (i==4)
+                        chess[i][j]=new King("white");
+                }
+            }
+        }
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public int getSize()
     {
-        // put your code here
-        return x + y;
+        return chess.length;
     }
 }
