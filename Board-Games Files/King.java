@@ -12,4 +12,11 @@ public class King extends ChessPiece
     {
         color=side;
     }
+    public boolean [][] availableSpaces(int row, int col)
+    {
+        
+    }
+    public void move()
+    public void castle()
+    
 }
