@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TicTacToeBoard implements Board
+public class TicTacToeBoard implements Board, BlankInARow
 {
     private int[][] tictactoe;
     
@@ -29,7 +29,7 @@ public class TicTacToeBoard implements Board
     
     public void play(int row, int col, int player)
     {
-        tictactoe[row][col] = 1;
+        tictactoe[row][col] = player;
         
     }
     
