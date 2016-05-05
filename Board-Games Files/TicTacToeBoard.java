@@ -12,6 +12,13 @@ public class TicTacToeBoard implements Board
     public TicTacToeBoard()
     {
         tictactoe = new int[3][3];
+        for (int row = 0; row < tictactoe.length; row++)
+        {
+            for (int col = 0; col < tictactoe[0].length; col++)
+            {
+                tictactoe[row][col] = 0;
+            }
+        }
         
     }
     public int getSize()
@@ -19,6 +26,14 @@ public class TicTacToeBoard implements Board
         return tictactoe.length;
         
     }
+    
+    public void play(int row, int col, int player)
+    {
+        tictactoe[row][col] = 1;
+        
+    }
+    
+   
     
     public boolean[][] availableMoves()
     {
