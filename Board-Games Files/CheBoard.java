@@ -21,25 +21,25 @@ public class CheBoard implements Board
                 if (i==0)
                 {
                     if (j==0 || j==7)
-                        chess[i][i]=new Rook("black");
+                        chess[i][j]=new Rook("black");
                     if (j==1 || j==6)
                         chess[i][j]=new Knight("black");
-                    if (j==3 || j==5)
+                    if (j==2 || j==5)
                         chess[i][j]=new Bishop("black");
-                    if (i==4)
+                    if (i==3)
                         chess[i][j]=new Queen("black");
-                    if (i==5)
+                    if (i==4)
                         chess[i][j]=new King("black");
                 }
                 if (i==7)
                 {
                     if (j==0 || j==7)
-                        chess[i][i]=new Rook("white");
+                        chess[i][j]=new Rook("white");
                     if (j==1 || j==6)
                         chess[i][j]=new Knight("white");
-                    if (j==3 || j==5)
+                    if (j==2 || j==5)
                         chess[i][j]=new Bishop("white");
-                    if (i==5)
+                    if (i==3)
                         chess[i][j]=new Queen("white");
                     if (i==4)
                         chess[i][j]=new King("white");
