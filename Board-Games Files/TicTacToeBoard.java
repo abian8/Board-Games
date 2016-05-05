@@ -7,9 +7,13 @@
  */
 public class TicTacToeBoard implements Board
 {
-    private int[][] tictactoe = new int[3][3];
-    private final int rows = 3;
-    private final int col = 3;
+    private int[][] tictactoe;
+    
+    public TicTacToeBoard()
+    {
+        tictactoe = new int[3][3];
+        
+    }
     public int getSize()
     {
         return tictactoe.length;

@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.params=
-comment0.target=int\ getSize()
+comment0.target=TicTacToeBoard()
 comment1.params=
-comment1.target=boolean[][]\ availableMoves()
-numComments=2
+comment1.target=int\ getSize()
+comment2.params=
+comment2.target=boolean[][]\ availableMoves()
+numComments=3
