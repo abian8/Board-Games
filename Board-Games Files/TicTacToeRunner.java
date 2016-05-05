@@ -14,5 +14,7 @@ public class TicTacToeRunner
         
         TicTacToeBoard hi = new TicTacToeBoard();
         
+        String str = sc.nextLine();
+        
     }
 }
