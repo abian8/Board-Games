@@ -7,8 +7,8 @@
  */
 public abstract class ChessPiece
 {
-    public ChessPiece(String color);
-    public void move();
-    public boolean [][] availableSpaces();
+    public abstract ChessPiece(String color);
+    public abstract void move();
+    public abstract boolean [][] availableSpaces();
     
 }
