@@ -5,10 +5,11 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TicTacToeBoard implements Board, BlankInARow
+public class TicTacToeBoard implements BlankInARow
 {
     private int[][] tictactoe;
-    
+    private boolean[][] availableMoves=new boolean[tictactoe.length][tictactoe[0].length];;
+
     public TicTacToeBoard()
     {
         tictactoe = new int[3][3];
@@ -19,26 +20,44 @@ public class TicTacToeBoard implements Board, BlankInARow
                 tictactoe[row][col] = 0;
             }
         }
-        
+
     }
-    public int getSize()
+
+    public int numInARow()
     {
         return tictactoe.length;
-        
     }
-    
-    public void play(int row, int col, int player)
+
+    public int play(int row, int col, int player)
     {
-        tictactoe[row][col] = player;
-        
+        if(availableMoves[row][col]==false)
+        {
+            return -1;
+        }
+        else
+        {
+            tictactoe[row][col] = player;
+            return player;
+        }
     }
-    
-   
-    
+
     public boolean[][] availableMoves()
     {
-        boolean[][] temp = new boolean[tictactoe.length][tictactoe[0].length];
-        
-        return temp;
+        for(int row=0; row<availableMoves.length; row++)
+        {
+            for(int col=0; col<availableMoves[0].length; col++)
+            {
+                if(tictactoe[row][col]==0)
+                    availableMoves[row][col]=true;
+                else
+                    availableMoves[row][col]=false;
+            }
+        }
+        return availableMoves;
+    }
+
+    public boolean gameOver()
+    {
+        //i'll do diagonal check, i know how to check the rest.
     }
 }
