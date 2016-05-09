@@ -14,6 +14,6 @@ public interface BlankInARow
      * @return        the result produced by sampleMethod 
      */
     int numInARow();
-    boolean gameOver();
+    int gameOver();
     
 }

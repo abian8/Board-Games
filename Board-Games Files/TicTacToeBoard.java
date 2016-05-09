@@ -73,33 +73,45 @@ public class TicTacToeBoard implements BlankInARow
         return availableMoves;
     }
 
-    public boolean gameOver()
+    public int gameOver()
     {
         boolean a = true;
         
         // checks to see if there are any moves left
+        
+        
+        for (int[] row : tictactoe)
+        {
+            if (row[0] == row[1] && row[0] == row[2] && row[0] != 0)
+            {
+                return row[0];
+            }
+            
+        }
+        
+        for(int col = 0; col < tictactoe[0].length; col++)
+        {
+            int num1, num2, num3;
+            num1 = tictactoe[0][col];
+            num2 = tictactoe[1][col];
+            num3 = tictactoe[2][col];
+            if (num1 == num2 && num1 == num3 && num1 != 0)
+            {
+                return num1;
+            }
+        }
+        
         for(int row = 0; row < tictactoe.length; row++)
         {
             for (int col = 0; col < tictactoe[0].length; col++)
             {
                 if (tictactoe [row][col] == 0)
                 {
-                    return false;
+                    return -1;
                 }
             }
         }
-        
-        for (int[] row : tictactoe)
-        {
-            if (row[0] == row[1] && row[0] == row[2])
-            {
-                return true;
-            }
-            
-        }
-        
-        
-        
-        return a;
+
+        return 0;
     }
 }
