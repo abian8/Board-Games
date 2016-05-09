@@ -12,7 +12,7 @@ public class TicTacToeRunner
     {
         String str;
         int row=0, col=0, indexOfComma;
-        System.out.print("Enter the coordinates of the square in the format(#,#), seperate by a comma with no space: ");
+        System.out.println("Enter the coordinates of the square in the format #,# seperated by a comma with no space");
         Scanner sc = new Scanner(System.in);
         TicTacToeBoard hi = new TicTacToeBoard();
         
@@ -22,14 +22,14 @@ public class TicTacToeRunner
             str = sc.nextLine();
             indexOfComma=str.indexOf(",");
             while(indexOfComma==-1 || (Integer.parseInt(str.substring(0,indexOfComma))>2 || Integer.parseInt(str.substring(0,indexOfComma))<0)
-            || (Integer.parseInt(str.substring(indexOfComma))>2 || Integer.parseInt(str.substring(indexOfComma))<0))
+            || (Integer.parseInt(str.substring(indexOfComma+1))>2 || Integer.parseInt(str.substring(indexOfComma+1))<0))
             {
                 System.out.print("Invalid move. Player " + hi.getPlayer() + ", please make a legal move: ");
                 str=sc.nextLine();
                 indexOfComma=str.indexOf(",");
             }
             row=Integer.parseInt(str.substring(0,indexOfComma));
-            col=Integer.parseInt(str.substring(indexOfComma));
+            col=Integer.parseInt(str.substring(indexOfComma+1));
             hi.play(row,col);
             
         }
