@@ -13,7 +13,7 @@ public interface BlankInARow
      * @param  y    a sample parameter for a method
      * @return        the result produced by sampleMethod 
      */
-    int numInARow(int num);
-    boolean victoryOrNaw(boolean[][] board);
+    int numInARow();
+    int gameOver();
     
 }
