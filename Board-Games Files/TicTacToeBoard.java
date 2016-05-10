@@ -101,6 +101,16 @@ public class TicTacToeBoard implements BlankInARow
             }
         }
         
+        
+        if(tictactoe[0][0]!=0 && tictactoe[0][0]==tictactoe[1][1] && tictactoe[0][0]==tictactoe[2][2])
+        {
+            return tictactoe[0][0];
+        }
+        if(tictactoe[2][0]!=0 && tictactoe[2][0]==tictactoe[1][1] && tictactoe[2][0]==tictactoe[0][2])
+        {
+            return tictactoe[2][0];
+        }
+        
         for(int row = 0; row < tictactoe.length; row++)
         {
             for (int col = 0; col < tictactoe[0].length; col++)
