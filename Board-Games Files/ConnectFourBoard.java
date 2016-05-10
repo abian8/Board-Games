@@ -5,29 +5,26 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ConnectFourBoard
+public class ConnectFourBoard implements Board
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int [][] connectfour;
 
     /**
      * Constructor for objects of class ConnectFourBoard
      */
     public ConnectFourBoard()
     {
-        // initialise instance variables
-        x = 0;
+        connectfour=new int[6][7];
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public boolean[][] availableMoves()
     {
-        // put your code here
-        return x + y;
+        boolean [][] temp=new boolean[1][connectfour[0].length];
+        for (int i=0; i<connectfour[0].length; i++)
+        {
+            if (connectfour[0][i]==0)
+                temp[0][i]=true;
+        }
+        return temp;
     }
 }
