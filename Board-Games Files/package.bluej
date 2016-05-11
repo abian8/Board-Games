@@ -100,8 +100,13 @@ target12.x=340
 target12.y=150
 target13.editor.height=700
 target13.editor.width=900
+<<<<<<< HEAD
+target13.editor.x=7
+target13.editor.y=168
+=======
 target13.editor.x=1068
 target13.editor.y=188
+>>>>>>> 0ec77781642c80fd8ad04bb3ef8c9f5ec6fbc471
 target13.height=50
 target13.name=TicTacToeBoard
 target13.naviview.expanded=true
@@ -218,12 +223,21 @@ target6.showInterface=false
 target6.type=InterfaceTarget
 target6.typeParameters=
 target6.width=110
+<<<<<<< HEAD
+target6.x=180
+target6.y=570
+target7.editor.height=700
+target7.editor.width=1007
+target7.editor.x=852
+target7.editor.y=359
+=======
 target6.x=410
 target6.y=80
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=881
 target7.editor.y=311
+>>>>>>> 0ec77781642c80fd8ad04bb3ef8c9f5ec6fbc471
 target7.height=50
 target7.name=TicTacToeRunner
 target7.naviview.expanded=true
