@@ -9,7 +9,7 @@ public class TicTacToeBoard implements BlankInARow
 {
     private int[][] tictactoe;
     private boolean[][] availableMoves;
-    private int playerCount;
+    private static int playerCount;
 
     public TicTacToeBoard()
     {
@@ -34,11 +34,6 @@ public class TicTacToeBoard implements BlankInARow
     public int getPlayer()
     {
         return playerCount%2 + 1;
-    }
-    
-    public int getWinner()
-    {
-        return (playerCount-1) % 2 + 1;
     }
     
     public int play(int row, int col)
