@@ -45,9 +45,18 @@ public class FiveInARow implements BlankInARow
     public int play(int row, int col)
     {
         int playNumber = playerCount % 2 + 1;
+        availableMoves = availableMoves();
+        if(availableMoves[row][col] == false)
+        {
+            return -1;
+        }
+        else
+        {
+            fiveInARow[row][col] = playNumber;
+            playerCount++;
+        }
         
-        
-        return 1;
+        return playNumber;
     }
     
     public boolean[][] availableMoves()
