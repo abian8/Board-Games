@@ -12,5 +12,5 @@ comment4.target=int\ play(int,\ int)
 comment5.params=
 comment5.target=boolean[][]\ availableMoves()
 comment6.params=
-comment6.target=boolean\ gameOver()
+comment6.target=int\ gameOver()
 numComments=7
