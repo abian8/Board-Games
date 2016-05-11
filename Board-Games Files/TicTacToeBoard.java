@@ -1,5 +1,4 @@
-q
-qq
+
 /**
  * Write a description of class TicTacToeBoard here.
  * 
@@ -10,7 +9,7 @@ public class TicTacToeBoard implements BlankInARow
 {
     private int[][] tictactoe;
     private boolean[][] availableMoves;
-    private int playerCount;
+    private static int playerCount;
 
     public TicTacToeBoard()
     {
@@ -35,11 +34,6 @@ public class TicTacToeBoard implements BlankInARow
     public int getPlayer()
     {
         return playerCount%2 + 1;
-    }
-    
-    public int getWinner()
-    {
-        return (playerCount-1) % 2 + 1;
     }
     
     public int play(int row, int col)
@@ -78,7 +72,7 @@ public class TicTacToeBoard implements BlankInARow
     {
         boolean a = true;
         
-        // checks to see if there are any moves left
+        
         
         
         for (int[] row : tictactoe)

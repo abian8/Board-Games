@@ -15,5 +15,7 @@ public interface BlankInARow
      */
     int numInARow();
     int gameOver();
+    int getPlayer();
+    int play(int row, int col);
     
 }
