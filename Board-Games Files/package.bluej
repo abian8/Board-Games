@@ -21,11 +21,28 @@ dependency7.from=TicTacToeRunner
 dependency7.to=TicTacToeBoard
 dependency7.type=UsesDependency
 objectbench.height=76
+<<<<<<< HEAD
 objectbench.width=872
 package.editor.height=511
 package.editor.width=764
 package.editor.x=999
 package.editor.y=185
+=======
+<<<<<<< HEAD
+objectbench.width=1106
+package.editor.height=673
+package.editor.width=998
+package.editor.x=-7
+package.editor.y=23
+package.numDependencies=6
+package.numTargets=15
+=======
+objectbench.width=668
+package.editor.height=400
+package.editor.width=560
+package.editor.x=961
+package.editor.y=57
+>>>>>>> c35656dd6de33d2f23c7f09f1ef5507e0409321b
 package.numDependencies=7
 package.numTargets=17
 package.showExtends=true
@@ -49,6 +66,7 @@ target10.editor.x=0
 target10.editor.y=23
 target10.height=60
 target10.name=ChessPiece
+target10.naviview.expanded=true
 target10.showInterface=false
 target10.type=AbstractTarget
 target10.typeParameters=
