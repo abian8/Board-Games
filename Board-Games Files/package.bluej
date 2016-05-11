@@ -21,6 +21,15 @@ dependency7.from=TicTacToeRunner
 dependency7.to=TicTacToeBoard
 dependency7.type=UsesDependency
 objectbench.height=76
+<<<<<<< HEAD
+objectbench.width=1106
+package.editor.height=673
+package.editor.width=998
+package.editor.x=-7
+package.editor.y=23
+package.numDependencies=6
+package.numTargets=15
+=======
 objectbench.width=668
 package.editor.height=400
 package.editor.width=560
@@ -28,6 +37,7 @@ package.editor.x=961
 package.editor.y=57
 package.numDependencies=7
 package.numTargets=17
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
@@ -58,17 +68,30 @@ target10.x=200
 target10.y=170
 target11.editor.height=700
 target11.editor.width=900
+<<<<<<< HEAD
+target11.editor.x=158
+target11.editor.y=256
+target11.height=50
+target11.name=TicTacToeBoard
+=======
 target11.editor.x=1018
 target11.editor.y=145
 target11.height=50
 target11.name=Board
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target11.naviview.expanded=true
 target11.showInterface=false
 target11.type=InterfaceTarget
 target11.typeParameters=
+<<<<<<< HEAD
+target11.width=120
+target11.x=10
+target11.y=130
+=======
 target11.width=80
 target11.x=50
 target11.y=110
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target12.editor.height=700
 target12.editor.width=900
 target12.editor.x=0
@@ -96,6 +119,24 @@ target13.x=30
 target13.y=310
 target14.editor.height=700
 target14.editor.width=900
+<<<<<<< HEAD
+target14.editor.x=966
+target14.editor.y=410
+target14.height=50
+target14.name=ConnectFourBoard
+target14.showInterface=false
+target14.type=ClassTarget
+target14.typeParameters=
+target14.width=140
+target14.x=660
+target14.y=10
+target15.editor.height=700
+target15.editor.width=900
+target15.editor.x=831
+target15.editor.y=337
+target15.height=50
+target15.name=Rook
+=======
 target14.editor.x=0
 target14.editor.y=2
 target14.height=50
@@ -112,11 +153,20 @@ target15.editor.x=1020
 target15.editor.y=153
 target15.height=50
 target15.name=GoPiece
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target15.naviview.expanded=true
 target15.showInterface=false
 target15.type=ClassTarget
 target15.typeParameters=
 target15.width=80
+<<<<<<< HEAD
+target15.x=440
+target15.y=510
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=123
+target2.editor.y=23
+=======
 target15.x=340
 target15.y=260
 target16.height=50
@@ -139,6 +189,7 @@ target17.typeParameters=
 target17.width=80
 target17.x=0
 target17.y=210
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target2.height=50
 target2.name=CheBoard
 target2.showInterface=false
@@ -184,12 +235,17 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=80
+<<<<<<< HEAD
+target5.x=850
+target5.y=260
+=======
 target5.x=280
 target5.y=10
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=0
 target6.editor.y=23
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target6.height=50
 target6.name=BlankInARow
 target6.naviview.expanded=true
@@ -209,11 +265,17 @@ target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
+<<<<<<< HEAD
+target7.width=80
+target7.x=780
+target7.y=180
+=======
 target7.width=130
 target7.x=410
 target7.y=280
 target8.appletHeight=500
 target8.appletWidth=500
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
 target8.editor.height=700
 target8.editor.width=900
 target8.editor.x=512
@@ -239,5 +301,10 @@ target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
 target9.width=80
+<<<<<<< HEAD
+target9.x=200
+target9.y=20
+=======
 target9.x=180
 target9.y=80
+>>>>>>> 934ac977f56c3d553edcb6ffa2f138f52fc40b8b
