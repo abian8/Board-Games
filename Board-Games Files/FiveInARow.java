@@ -5,29 +5,69 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FiveInARow
+public class FiveInARow implements BlankInARow
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int[][] fiveInARow;
+    private boolean[][] availableMoves;
+    private int playerCount;
 
-    /**
-     * Constructor for objects of class FiveInARow
-     */
+    
     public FiveInARow()
     {
-        // initialise instance variables
-        x = 0;
+        fiveInARow = new int[19][19];
+        availableMoves = new boolean[19][19];
+        playerCount = 0;
+        for (int row = 0; row < fiveInARow.length; row++)
+        {
+            for (int col = 0; col < fiveInARow[0].length; col++)
+            {
+                fiveInARow[row][col] = 0;
+            }
+        }
+        
+    }
+    
+    public int numInARow()
+    {
+        return 5;
+    }
+    
+    public int getPlayer()
+    {
+        return playerCount%2 + 1;
+    }
+    
+    public int getWinner()
+    {
+        return (playerCount - 1) % 2 + 1;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public int play(int row, int col)
     {
-        // put your code here
-        return x + y;
+        int playNumber = playerCount % 2 + 1;
+        
+        
+        return 1;
     }
+    
+    public boolean[][] availableMoves()
+    {
+        for(int row=0; row<availableMoves.length; row++)
+        {
+            for(int col=0; col<availableMoves[0].length; col++)
+            {
+                if(fiveInARow[row][col]==0)
+                    availableMoves[row][col]=true;
+                else
+                    availableMoves[row][col]=false;
+            }
+        }
+        return availableMoves;
+    }
+    
+    public int gameOver()
+    {
+        return 1;
+    }
+    
 }
